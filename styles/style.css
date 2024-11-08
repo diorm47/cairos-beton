@@ -15,6 +15,7 @@ button {
   cursor: pointer;
   border: none;
   font-family: "Work Sans", sans-serif;
+  transition: all 0.4s ease;
 }
 input,
 textarea {
@@ -112,9 +113,15 @@ textarea {
   text-align: center;
 }
 
+.main_btn:hover, .sec_btn:hover {
+  background: #cbcaca;
+}
 .red_btn {
   color: rgb(255, 255, 255);
   background: rgb(238, 42, 54);
+}
+.red_btn:hover {
+  background: rgb(200, 29, 41);
 }
 .main_nav_container {
   backdrop-filter: blur(8px);
@@ -155,7 +162,9 @@ textarea {
   line-height: 150%;
   letter-spacing: 0%;
 }
-
+.nav_menu a p:hover {
+  text-decoration: underline;
+}
 .nav_menu_item {
   display: flex;
   align-items: center;
@@ -328,6 +337,13 @@ textarea {
   line-height: 150%;
   letter-spacing: 0%;
   text-align: center;
+  transition: all 0.4s ease;
+}
+.filter_btn:hover {
+  transition: all 0.4s ease;
+  border: 1px solid rgba(27, 27, 30, 0.15);
+  color: rgb(255, 255, 255);
+  background: rgb(238, 42, 54);
 }
 
 .filter_btns {
@@ -335,10 +351,17 @@ textarea {
   flex-wrap: wrap;
   gap: 16px;
 }
+.filter_btns
 .active_filter_btn {
   background: rgb(238, 42, 54);
   border: 1px solid rgba(27, 27, 30, 0.15);
   color: #fff;
+}
+.about_beton_block  {
+  display: none;
+}
+.about_beton_blocks_content .active_filter_btn {
+  display: block;
 }
 
 .filter_btns {
@@ -801,6 +824,11 @@ section {
   justify-content: center;
   position: absolute;
   top: -265px;
+  transition: all 0.4s ease;
+}
+.car_arrow:hover {
+  transition: all 0.4s ease;
+  opacity: 0.6;
 }
 .car_arrow_left {
   left: -56px;
@@ -1462,6 +1490,9 @@ footer {
   line-height: 150%;
   letter-spacing: 0%;
   text-align: left;
+}
+.footer_menu a p:hover, .footer_bottom_text a p:hover, .f_num:hover {
+  text-decoration: underline;
 }
 
 .f_num {

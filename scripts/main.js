@@ -9,3 +9,4 @@ document.querySelectorAll(".faq_item").forEach((item) => {
     });
   });
 });
+

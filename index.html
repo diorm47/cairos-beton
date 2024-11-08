@@ -159,10 +159,10 @@
       <div class="block_title">
         <h3>Марки бетона</h3>
       </div>
-      <div class="filter_btns">
-        <button class="filter_btn active_filter_btn">M100</button>
-        <button class="filter_btn">M150</button>
-        <button class="filter_btn">M200</button>
+      <div class="filter_btns tabs_list">
+        <button class="filter_btn active_filter_btn" data-id="beton1">M100</button>
+        <button class="filter_btn" data-id="beton2">M150</button>
+        <button class="filter_btn" data-id="beton3">M200</button>
         <button class="filter_btn">M250</button>
         <button class="filter_btn">M300</button>
         <button class="filter_btn">M350</button>
@@ -173,54 +173,157 @@
         <button class="filter_btn">M600</button>
         <button class="filter_btn">M1000</button>
       </div>
-
-      <div class="about_beton_block">
-        <div class="about_beton_block_title">
-          <h4>М100</h4>
-          <div class="know_more">
-            <p>Узнать больше</p>
-            <img src="./assets/icons/arrow-right.svg" alt="" />
-          </div>
-        </div>
-        <div class="about_beton_block_wrapper">
-          <div class="about_beton_block_item">
-            <h5>Состав 1 м3</h5>
-            <p>
-              Портландцемент используется для вяжущих свойств бетона М100, затем
-              в состав добавляются наполнители — в виде песка, щебня или
-              среднего размера гравия, в последнюю очередь вода — для создания
-              нужной консистенции. Выбор составляющих отличается в зависимости
-              от конкретно поставленных задач.
-            </p>
-
-            <div class="beton_desc">
-              <div class="beton_desc_list">
-                <p>Основные составляющие:</p>
-                <ul>
-                  <li>Цемент М400 — 184 кг;</li>
-                  <li>Песок — 846 кг;</li>
-                  <li>Щебень — 1288 кг;</li>
-                  <li>Вода — 170-180л;</li>
-                  <li>Добавки — опционально.</li>
-                </ul>
-              </div>
-              <img src="./assets/images/breton-img-group.png" alt="" />
+      <div class="about_beton_blocks_content">
+        <div class="about_beton_block active_filter_btn" id="beton1">
+          <div class="about_beton_block_title">
+            <h4>М100</h4>
+            <div class="know_more">
+              <p>Узнать больше</p>
+              <img src="./assets/icons/arrow-right.svg" alt="" />
             </div>
           </div>
-          <div class="about_beton_block_wrapper_line"></div>
-          <div class="about_beton_block_item">
-            <h5>Область применения</h5>
-            <p>
-              Бетон марки М100 В7.5 применяется для ремонтно-строительных работ
-              в тех случаях, когда не требуются высокие эксплуатационные
-              качества для конструкции. Из-за низкого показателя прочности эта
-              марка бетона относится к «тощему» типу раствора.
-            </p>
+          <div class="about_beton_block_wrapper">
+            <div class="about_beton_block_item">
+              <h5>Состав 1 м3</h5>
+              <p>
+                Портландцемент используется для вяжущих свойств бетона М100,
+                затем в состав добавляются наполнители — в виде песка, щебня или
+                среднего размера гравия, в последнюю очередь вода — для создания
+                нужной консистенции. Выбор составляющих отличается в зависимости
+                от конкретно поставленных задач.
+              </p>
 
-            <div class="beton_desc_gallery">
-              <img src="./assets/images/beton-1.png" alt="" />
-              <img src="./assets/images/beton-2.png" alt="" />
-              <img src="./assets/images/beton-3.png" alt="" />
+              <div class="beton_desc">
+                <div class="beton_desc_list">
+                  <p>Основные составляющие:</p>
+                  <ul>
+                    <li>Цемент М400 — 184 кг;</li>
+                    <li>Песок — 846 кг;</li>
+                    <li>Щебень — 1288 кг;</li>
+                    <li>Вода — 170-180л;</li>
+                    <li>Добавки — опционально.</li>
+                  </ul>
+                </div>
+                <img src="./assets/images/breton-img-group.png" alt="" />
+              </div>
+            </div>
+            <div class="about_beton_block_wrapper_line"></div>
+            <div class="about_beton_block_item">
+              <h5>Область применения</h5>
+              <p>
+                Бетон марки М100 В7.5 применяется для ремонтно-строительных
+                работ в тех случаях, когда не требуются высокие эксплуатационные
+                качества для конструкции. Из-за низкого показателя прочности эта
+                марка бетона относится к «тощему» типу раствора.
+              </p>
+
+              <div class="beton_desc_gallery">
+                <img src="./assets/images/beton-1.png" alt="" />
+                <img src="./assets/images/beton-2.png" alt="" />
+                <img src="./assets/images/beton-3.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about_beton_block" id="beton2">
+          <div class="about_beton_block_title">
+            <h4>М150</h4>
+            <div class="know_more">
+              <p>Узнать больше</p>
+              <img src="./assets/icons/arrow-right.svg" alt="" />
+            </div>
+          </div>
+          <div class="about_beton_block_wrapper">
+            <div class="about_beton_block_item">
+              <h5>Состав 1 м3</h5>
+              <p>
+                Портландцемент используется для вяжущих свойств бетона М100,
+                затем в состав добавляются наполнители — в виде песка, щебня или
+                среднего размера гравия, в последнюю очередь вода — для создания
+                нужной консистенции. Выбор составляющих отличается в зависимости
+                от конкретно поставленных задач.
+              </p>
+
+              <div class="beton_desc">
+                <div class="beton_desc_list">
+                  <p>Основные составляющие:</p>
+                  <ul>
+                    <li>Цемент М400 — 184 кг;</li>
+                    <li>Песок — 846 кг;</li>
+                    <li>Щебень — 1288 кг;</li>
+                    <li>Вода — 170-180л;</li>
+                    <li>Добавки — опционально.</li>
+                  </ul>
+                </div>
+                <img src="./assets/images/breton-img-group.png" alt="" />
+              </div>
+            </div>
+            <div class="about_beton_block_wrapper_line"></div>
+            <div class="about_beton_block_item">
+              <h5>Область применения</h5>
+              <p>
+                Бетон марки М100 В7.5 применяется для ремонтно-строительных
+                работ в тех случаях, когда не требуются высокие эксплуатационные
+                качества для конструкции. Из-за низкого показателя прочности эта
+                марка бетона относится к «тощему» типу раствора.
+              </p>
+
+              <div class="beton_desc_gallery">
+                <img src="./assets/images/beton-1.png" alt="" />
+                <img src="./assets/images/beton-2.png" alt="" />
+                <img src="./assets/images/beton-3.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about_beton_block" id="beton3">
+          <div class="about_beton_block_title">
+            <h4>М200</h4>
+            <div class="know_more">
+              <p>Узнать больше</p>
+              <img src="./assets/icons/arrow-right.svg" alt="" />
+            </div>
+          </div>
+          <div class="about_beton_block_wrapper">
+            <div class="about_beton_block_item">
+              <h5>Состав 1 м3</h5>
+              <p>
+                Портландцемент используется для вяжущих свойств бетона М100,
+                затем в состав добавляются наполнители — в виде песка, щебня или
+                среднего размера гравия, в последнюю очередь вода — для создания
+                нужной консистенции. Выбор составляющих отличается в зависимости
+                от конкретно поставленных задач.
+              </p>
+
+              <div class="beton_desc">
+                <div class="beton_desc_list">
+                  <p>Основные составляющие:</p>
+                  <ul>
+                    <li>Цемент М400 — 184 кг;</li>
+                    <li>Песок — 846 кг;</li>
+                    <li>Щебень — 1288 кг;</li>
+                    <li>Вода — 170-180л;</li>
+                    <li>Добавки — опционально.</li>
+                  </ul>
+                </div>
+                <img src="./assets/images/breton-img-group.png" alt="" />
+              </div>
+            </div>
+            <div class="about_beton_block_wrapper_line"></div>
+            <div class="about_beton_block_item">
+              <h5>Область применения</h5>
+              <p>
+                Бетон марки М100 В7.5 применяется для ремонтно-строительных
+                работ в тех случаях, когда не требуются высокие эксплуатационные
+                качества для конструкции. Из-за низкого показателя прочности эта
+                марка бетона относится к «тощему» типу раствора.
+              </p>
+
+              <div class="beton_desc_gallery">
+                <img src="./assets/images/beton-1.png" alt="" />
+                <img src="./assets/images/beton-2.png" alt="" />
+                <img src="./assets/images/beton-3.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -1460,5 +1563,6 @@
     </script>
 
     <script src="./scripts/main.js"></script>
+    <script src="./scripts/tabs.js"></script>
   </body>
 </html>

@@ -1518,3 +1518,152 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+.pages_navigation {
+  padding: 32px 0 48px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.main_page_link {
+  margin-right: 5px;
+}
+.pages_navigation_arr {
+  width: 4px;
+}
+
+.pages_navigation p {
+  color: rgb(27, 27, 30);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.header_bg_block .pre_footer_right {
+  max-width: 438px;
+}
+
+.header_bg_block .pre_footer_left {
+  max-width: 670px;
+}
+
+.header_bg_block {
+  padding-top: 0;
+}
+
+.pages_navigation_w p {
+  color: rgb(255, 255, 255);
+}
+
+.pages_navigation a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners_desc p {
+  /* Body/Default */
+  color: rgba(27, 27, 30, 0.7);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.partners_block .block_title {
+  margin-bottom: 24px;
+}
+
+.partners_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 26px;
+  margin-top: 48px;
+}
+
+.partners_list div {
+  height: 201px;
+  box-sizing: border-box;
+  border: 1px solid rgba(27, 27, 30, 0.15);
+  border-radius: 4px;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_imgs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.filter_btns_th .filter_btn {
+  width: 15.5%;
+}
+
+.truck_block {
+  box-sizing: border-box;
+  padding: 24px 26px 24px 26px;
+  width: 100%;
+  border: 1px solid rgba(27, 27, 30, 0.15);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.truck_block_left {
+  max-width: 300px;
+}
+.truck_block_left h3 {
+  /* Headline Desktop/H3 */
+  color: rgb(27, 27, 30);
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: -1.5%;
+}
+.truck_prices {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px 0 45px;
+}
+
+.truck_block p {
+  /* Body/Default */
+  color: rgb(179, 179, 180);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.truck_prices p {
+  margin-bottom: 8px;
+}
+.truck_block_left .main_btn {
+  width: 100%;
+}
+
+.truck_block_right {
+  width: 100%;
+  max-width: 300px;
+}
+.truck_block_right {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 12px;
+}
+.truck_block_right span {
+  color: rgb(27, 27, 30);
+  padding-left: 8px;
+}

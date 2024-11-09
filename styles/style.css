@@ -113,7 +113,8 @@ textarea {
   text-align: center;
 }
 
-.main_btn:hover, .sec_btn:hover {
+.main_btn:hover,
+.sec_btn:hover {
   background: #cbcaca;
 }
 .red_btn {
@@ -351,13 +352,12 @@ textarea {
   flex-wrap: wrap;
   gap: 16px;
 }
-.filter_btns
-.active_filter_btn {
+.filter_btns .active_filter_btn {
   background: rgb(238, 42, 54);
   border: 1px solid rgba(27, 27, 30, 0.15);
   color: #fff;
 }
-.about_beton_block  {
+.about_beton_block {
   display: none;
 }
 .about_beton_blocks_content .active_filter_btn {
@@ -1491,7 +1491,9 @@ footer {
   letter-spacing: 0%;
   text-align: left;
 }
-.footer_menu a p:hover, .footer_bottom_text a p:hover, .f_num:hover {
+.footer_menu a p:hover,
+.footer_bottom_text a p:hover,
+.f_num:hover {
   text-decoration: underline;
 }
 
@@ -1698,3 +1700,89 @@ footer {
   color: rgb(27, 27, 30);
   padding-left: 8px;
 }
+
+.catalog_btn {
+  position: relative;
+}
+.menu_drop_down {
+  border-radius: 0px 0px 8px 8px;
+  padding: 16px;
+  /* Калькулятор */
+  box-shadow: 0px 4px 28px 0px rgba(228, 228, 228, 0.25);
+  /* Text/White */
+  background: rgb(255, 255, 255);
+  position: absolute;
+  left: 0;
+  top: 61px;
+  display: flex;
+  align-items: start;
+  gap: 24px;
+}
+.menu_drop_down_item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px 8px 16px;
+  margin-bottom: 4px;
+}
+.menu_drop_down_item p {
+  color: rgb(27, 27, 30);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.menu_drop_down_list_items {
+  padding: 0px 48px 0px 48px;
+}
+
+.menu_drop_down_list_items p {
+  color: rgba(27, 27, 30, 0.7);
+  margin-bottom: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.pl_16px {
+  padding-left: 16px;
+}
+.pt_32px {
+  padding-top: 32px;
+}
+
+.menu_drop_down_main {
+  min-width: 890px;
+}
+.pr0 {
+  padding-right: 0;
+}
+.menu_drop_down p:hover {
+  text-decoration: underline;
+}
+
+.menu_drop_down {
+  display: none;
+}
+.active_catalog_btn .menu_drop_down,
+.active_nav_menu_item .menu_drop_down {
+  display: flex;
+}
+
+.nav_menu_item {
+  position: relative;
+}
+
+.menu_drop_down_sec {
+  top: 53px;
+}
+.menu_drop_down_sec {
+  min-width: 260px;
+}
+
+
+

@@ -808,6 +808,7 @@ section {
 
 .carousel_wrapper {
   width: 100%;
+  position: relative;
 }
 .carousel_container {
   overflow: hidden;
@@ -823,7 +824,8 @@ section {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: -265px;
+  top: 50%;
+  margin-top: -30px;
   transition: all 0.4s ease;
 }
 .car_arrow:hover {
@@ -842,7 +844,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
 }
 .swiper_pagination {
   display: flex;
@@ -1635,6 +1636,9 @@ footer {
   justify-content: space-between;
   margin-bottom: 48px;
 }
+.about_imgs img {
+  width: 32%;
+}
 
 .filter_btns_th .filter_btn {
   width: 15.5%;
@@ -1783,6 +1787,401 @@ footer {
 .menu_drop_down_sec {
   min-width: 260px;
 }
+.main_nav {
+  gap: 20px;
+}
+.mob_menu_btn {
+  width: 53px;
+  height: 53px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
 
+.mob_menu_btn img {
+  transform: rotate(180deg);
+}
 
+.mob_menu_wrapper {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: rgb(27, 36, 71);
+  top: 0;
+  left: 0;
+  padding: 20px;
+  transition: all 0.4s ease;
+  transform: translateX(100%);
+}
+.mob_menu_exit {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.mob_menu_list {
+  display: flex !important;
+  flex-direction: column;
+  padding-top: 40px;
+}
 
+.visible_mob_menu_wrapper {
+  transition: all 0.4s ease;
+  transform: translateX(0);
+}
+
+@media only screen and (max-width: 1400px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .carousel_wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .mob_menu_btn {
+    display: flex;
+  }
+  .truck_block {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  .filter_btns_th .filter_btn {
+    width: auto;
+    padding: 0 25px;
+  }
+  .header_grid_list,
+  .about_beton_block_wrapper {
+    flex-direction: column;
+  }
+  .item_large,
+  .header_grid_list_grid,
+  .about_beton_block_item {
+    width: 100%;
+  }
+  .about_beton_block_wrapper_line {
+    width: 100%;
+    height: 1px;
+  }
+  .adv_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .adv_card {
+    width: 100%;
+  }
+  .car_arrow_left {
+    left: 0px;
+  }
+  .car_arrow_right {
+    right: 0px;
+  }
+  .calc_options {
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 20px;
+  }
+  .faq_wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .faqs_list {
+    width: 100%;
+  }
+  .articles_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .article_item {
+    width: 100%;
+  }
+  .nav_menu,
+  .top_nav_right .nav_socials,
+  .top_nav_right .top_nav_contacts {
+    display: none;
+  }
+  .partners_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .partners_list div {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .truck_block img {
+    width: 100%;
+  }
+  .partners_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .prices_table {
+    overflow: auto;
+  }
+  .prices_table table {
+    min-width: 900px;
+  }
+  .calculator {
+    flex-direction: column;
+  }
+  .calculator_left {
+    width: 100%;
+  }
+  .consulting_block_w {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .consulting_block_left {
+    width: 100%;
+  }
+  .consl_img {
+    position: static;
+    width: 100%;
+  }
+  .consulting_block {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .block_title {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  .contacts_list {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .socials_btm {
+    flex-direction: row;
+  }
+  .contacts_list_item_2 {
+    align-items: start;
+  }
+  .contacts_list_item_1,
+  .contacts_list_item_3 {
+    width: 100%;
+  }
+  .contacts_list_line {
+    display: none;
+  }
+  .pre_footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer_top,
+  .footer_bottom {
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+  }
+  .footer_bottom_text {
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+  }
+  section,
+  .consulting_block_w,
+  .adv_block,
+  .calculator_block,
+  .prices_block_wrapper,
+  .beton_marks {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .operator {
+    width: 100%;
+  }
+  .block_title h3 {
+    font-size: 25px;
+  }
+  .block_title {
+    margin-bottom: 20px;
+  }
+  .consulting_block_w {
+    padding: 30px 0 0;
+  }
+  .consulting_block_left {
+    padding: 0 10px;
+  }
+  .beton_desc_gallery img {
+    width: 32%;
+  }
+  .nav_search {
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .truck_block {
+    padding: 20px 15px;
+  }
+  .truck_block_right,
+  .truck_block_left {
+    max-width: 100%;
+  }
+  .partners_list {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .partners_list div {
+    height: 130px;
+  }
+  .item_large {
+    height: 300px;
+  }
+  .header_grid_item {
+    padding: 20px;
+  }
+  .header_grid_list_grid_list,
+  .header_grid_list,
+  .header_grid_list_grid {
+    gap: 15px;
+  }
+  .header_grid_list {
+    margin-bottom: 16px !important;
+  }
+  .header_grid_list_grid_list {
+    flex-direction: column;
+  }
+  .header_grid_item {
+    height: 250px;
+  }
+  .header_grid_item a {
+    display: block;
+  }
+  .beton_desc {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  .about_beton_block {
+    padding: 15px;
+  }
+  .filter_btns {
+    margin-bottom: 20px;
+  }
+  .filter_btns {
+    gap: 10px;
+  }
+  .calculator {
+    padding: 20px 15px;
+  }
+  .calc_options {
+    margin-bottom: 30px;
+  }
+  .calc_actions {
+    flex-direction: column-reverse;
+    align-items: start;
+    gap: 20px;
+  }
+  br {
+    display: none;
+  }
+
+  .calc_actions .main_btn {
+    width: 100%;
+  }
+  .calculator {
+    gap: 30px;
+  }
+  .adv_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .adv_card {
+    padding: 20px;
+    height: auto;
+  }
+  .consulting_block_left h2 {
+    font-size: 26px;
+    line-height: 130%;
+  }
+  .rate_card {
+    padding: 15px;
+  }
+  .rate_card_auth {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .rate_card_auth_desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rate_card_text p {
+    font-size: 14px;
+  }
+  .car_arrows {
+    display: none;
+  }
+  .carousel_wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .faq_item_title_left p {
+    font-size: 17px;
+  }
+  .faq_item_desc p {
+    font-size: 14px;
+  }
+  .faq_item {
+    padding: 10px;
+  }
+  .operator {
+    padding: 15px;
+    gap: 30px;
+  }
+  .consulting_block img:first-child {
+    width: 100%;
+  }
+  .cons_tel img {
+    width: auto !important;
+  }
+  .consulting_block {
+    padding: 15px;
+  }
+  .articles_list {
+    display: flex;
+    flex-direction: column;
+  }
+  .dlbp_title_top {
+    flex-direction: column;
+  }
+  .dlbp_title h3 {
+    text-align: center;
+  }
+  footer {
+    padding: 30px 0;
+  }
+  .footer_bottom {
+    margin-top: 20px;
+  }
+  .pre_footer_left_desc p {
+    margin-top: 30px;
+  }
+  .calc_line {
+    margin-bottom: 30px;
+  }
+  .calc_options {
+    gap: 30px 10px;
+  }
+  .calc_option {
+    padding: 0 10px;
+  }
+  .pages_navigation {
+    padding: 20px 10px 30px;
+  }
+  .header_bg_block .dlbp_title h3 {
+    text-align: left;
+  }
+}

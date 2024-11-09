@@ -182,6 +182,47 @@
             <input type="text" placeholder="Поиск" />
             <img src="./assets/icons/search.svg" alt="" />
           </div>
+          <div class="catalog_btn mob_menu_btn" onclick="togglerMenu()">
+            <img src="./assets/icons/catallog-menu.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="mob_menu_wrapper">
+        <div class="mob_menu_exit">
+          <img onclick="togglerMenu()" src="./assets/icons/exit.svg" alt="" />
+        </div>
+        <div class="mob_menu_list nav_menu">
+          <a href="#">
+            <div class="nav_menu_item">
+              <p>Услуги</p>
+            </div></a
+          >
+          <a href="#">
+            <div class="nav_menu_item">
+              <p>Доставка</p>
+            </div></a
+          >
+          <a href="#">
+            <div class="nav_menu_item">
+              <p>Калькулятор</p>
+            </div></a
+          >
+          <a href="./prices.html">
+            <div class="nav_menu_item">
+              <p>Прайс</p>
+            </div></a
+          >
+          <a href="./prices.html">
+            <div class="nav_menu_item">
+              <p>Компания</p>
+            </div></a
+          >
+          <a href="#">
+            <div class="nav_menu_item">
+              <p>Контакты</p>
+            </div></a
+          >
         </div>
       </div>
     </nav>
@@ -1529,23 +1570,19 @@
             el: ".docs_pag",
             clickable: true,
           },
-          //   breakpoints: {
-          //     350: {
-          //       slidesPerView: 1,
-          //     },
-          //     640: {
-          //       slidesPerView: 2,
-          //       spaceBetween: 20,
-          //     },
-          //     768: {
-          //       slidesPerView: 3,
-          //       spaceBetween: 30,
-          //     },
-          //     1024: {
-          //       slidesPerView: 3,
-          //       spaceBetween: 48,
-          //     },
-          //   },
+          breakpoints: {
+            350: {
+              slidesPerView: 1,
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1100: {
+              slidesPerView: 3,
+              spaceBetween: 48,
+            },
+          },
         });
       });
     </script>
@@ -1565,23 +1602,20 @@
             el: ".reates_pag",
             clickable: true,
           },
-          //   breakpoints: {
-          //     350: {
-          //       slidesPerView: 1,
-          //     },
-          //     640: {
-          //       slidesPerView: 2,
-          //       spaceBetween: 20,
-          //     },
-          //     768: {
-          //       slidesPerView: 3,
-          //       spaceBetween: 30,
-          //     },
-          //     1024: {
-          //       slidesPerView: 3,
-          //       spaceBetween: 48,
-          //     },
-          //   },
+          breakpoints: {
+            350: {
+              slidesPerView: 1,
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+
+            1100: {
+              slidesPerView: 3,
+              spaceBetween: 48,
+            },
+          },
         });
       });
     </script>
@@ -1601,23 +1635,24 @@
             el: ".photos_car_pag",
             clickable: true,
           },
-          //   breakpoints: {
-          //     350: {
-          //       slidesPerView: 1,
-          //     },
-          //     640: {
-          //       slidesPerView: 2,
-          //       spaceBetween: 20,
-          //     },
-          //     768: {
-          //       slidesPerView: 3,
-          //       spaceBetween: 30,
-          //     },
-          //     1024: {
-          //       slidesPerView: 3,
-          //       spaceBetween: 48,
-          //     },
-          //   },
+          breakpoints: {
+            350: {
+              slidesPerView: 1,
+            },
+            450: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+
+            1100: {
+              slidesPerView: 4,
+              spaceBetween: 48,
+            },
+          },
         });
       });
     </script>
@@ -1637,23 +1672,15 @@
             el: ".videos_car_pag",
             clickable: true,
           },
-          //   breakpoints: {
-          //     350: {
-          //       slidesPerView: 1,
-          //     },
-          //     640: {
-          //       slidesPerView: 2,
-          //       spaceBetween: 20,
-          //     },
-          //     768: {
-          //       slidesPerView: 3,
-          //       spaceBetween: 30,
-          //     },
-          //     1024: {
-          //       slidesPerView: 3,
-          //       spaceBetween: 48,
-          //     },
-          //   },
+          breakpoints: {
+            350: {
+              slidesPerView: 1,
+            },
+
+            768: {
+              slidesPerView: 2,
+            },
+          },
         });
       });
     </script>

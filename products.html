@@ -54,10 +54,83 @@
             <div class="catalog_btn">
               <img src="./assets/icons/catallog-menu.svg" alt="" />
               <p>Каталог</p>
+              <div class="menu_drop_down menu_drop_down_main">
+                <div class="menu_drop_down_list">
+                  <div class="menu_drop_down_item">
+                    <img src="./assets/icons/beton.png" alt="" />
+                    <p>Бетон</p>
+                  </div>
+                  <div class="menu_drop_down_list_items">
+                    <a href="#"><p>Товарный бетон</p></a>
+                    <a href="#"><p>Гравийный бетон</p></a>
+                    <a href="#"><p>Гранитный бетон</p></a>
+                    <a href="#"><p>Тощий бетон </p></a>
+                    <a href="#"><p>Тяжелый бетон</p></a>
+                    <a href="#"><p>Керамзитобетон</p></a>
+                    <a href="#"><p>Мелкозернистый бетон</p></a>
+                    <a href="#"><p>Зимний бетон</p></a>
+                  </div>
+                </div>
+                <div class="menu_drop_down_list">
+                  <div class="menu_drop_down_item">
+                    <img src="./assets/icons/sement.png" alt="" />
+                    <p>Цементный раствор</p>
+                  </div>
+                  <div class="menu_drop_down_list_items pr0">
+                    <a href="#"><p>Пескобетон</p></a>
+                    <a href="#"><p>Цементно-известковый раствор</p></a>
+                  </div>
+                  <div class="menu_drop_down_item pt_32px">
+                    <img src="./assets/icons/sement.png" alt="" />
+                    <p>Цементные смеси</p>
+                  </div>
+                  <div class="menu_drop_down_list_items pr0">
+                    <a href="#"><p>Пескоцементная смесь</p></a>
+                    <a href="#"><p>Кладочная смесь</p></a>
+                  </div>
+                </div>
+                <div class="menu_drop_down_list">
+                  <div class="menu_drop_down_item">
+                    <img src="./assets/icons/ruds.png" alt="" />
+                    <p>Нерудные материалы</p>
+                  </div>
+                  <div class="menu_drop_down_list_items">
+                    <a href="#"><p>Песок</p></a>
+                    <a href="#"><p>Щебень</p></a>
+                    <a href="#"><p class="pl_16px">Гравиный щебень</p></a>
+                    <a href="#"><p class="pl_16px">Гранитный щебень</p></a>
+                  </div>
+                  <div class="menu_drop_down_item pt_32px">
+                    <img src="./assets/icons/materials.png" alt="" />
+                    <p>Строительные материалы</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="nav_menu_item">
               <p>Услуги</p>
               <img src="./assets/icons/arrow-down.svg" alt="" />
+
+              <div class="menu_drop_down menu_drop_down_sec">
+                <div class="menu_drop_down_list">
+                  <div class="menu_drop_down_item">
+                    <img src="./assets/icons/beton.png" alt="" />
+                    <p>Бетон</p>
+                  </div>
+                  <div class="menu_drop_down_item">
+                    <img src="./assets/icons/ruds.png" alt="" />
+                    <p>Щебень</p>
+                  </div>
+                  <div class="menu_drop_down_item">
+                    <img src="./assets/icons/sement.png" alt="" />
+                    <p>Строительный песок</p>
+                  </div>
+                  <div class="menu_drop_down_item">
+                    <img src="./assets/icons/materials.png" alt="" />
+                    <p>Стройматериалы</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <a href="#">
               <div class="nav_menu_item">
@@ -77,6 +150,27 @@
             <div class="nav_menu_item">
               <p>Компания</p>
               <img src="./assets/icons/arrow-down.svg" alt="" />
+
+              <div class="menu_drop_down menu_drop_down_sec">
+                <div class="menu_drop_down_list">
+                  <div class="menu_drop_down_item">
+                    <img src="./assets/icons/beton.png" alt="" />
+                    <p>Бетон</p>
+                  </div>
+                  <div class="menu_drop_down_item">
+                    <img src="./assets/icons/ruds.png" alt="" />
+                    <p>Щебень</p>
+                  </div>
+                  <div class="menu_drop_down_item">
+                    <img src="./assets/icons/sement.png" alt="" />
+                    <p>Строительный песок</p>
+                  </div>
+                  <div class="menu_drop_down_item">
+                    <img src="./assets/icons/materials.png" alt="" />
+                    <p>Стройматериалы</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <a href="#">
               <div class="nav_menu_item">
@@ -88,6 +182,47 @@
             <input type="text" placeholder="Поиск" />
             <img src="./assets/icons/search.svg" alt="" />
           </div>
+          <div class="catalog_btn mob_menu_btn" onclick="togglerMenu()">
+            <img src="./assets/icons/catallog-menu.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="mob_menu_wrapper">
+        <div class="mob_menu_exit">
+          <img onclick="togglerMenu()" src="./assets/icons/exit.svg" alt="" />
+        </div>
+        <div class="mob_menu_list nav_menu">
+          <a href="#">
+            <div class="nav_menu_item">
+              <p>Услуги</p>
+            </div></a
+          >
+          <a href="#">
+            <div class="nav_menu_item">
+              <p>Доставка</p>
+            </div></a
+          >
+          <a href="#">
+            <div class="nav_menu_item">
+              <p>Калькулятор</p>
+            </div></a
+          >
+          <a href="./prices.html">
+            <div class="nav_menu_item">
+              <p>Прайс</p>
+            </div></a
+          >
+          <a href="./prices.html">
+            <div class="nav_menu_item">
+              <p>Компания</p>
+            </div></a
+          >
+          <a href="#">
+            <div class="nav_menu_item">
+              <p>Контакты</p>
+            </div></a
+          >
         </div>
       </div>
     </nav>
@@ -537,10 +672,12 @@
       <div class="block_title">
         <h3>Марки бетона</h3>
       </div>
-      <div class="filter_btns">
-        <button class="filter_btn active_filter_btn">M100</button>
-        <button class="filter_btn">M150</button>
-        <button class="filter_btn">M200</button>
+      <div class="filter_btns tabs_list">
+        <button class="filter_btn active_filter_btn" data-id="beton1">
+          M100
+        </button>
+        <button class="filter_btn" data-id="beton2">M150</button>
+        <button class="filter_btn" data-id="beton3">M200</button>
         <button class="filter_btn">M250</button>
         <button class="filter_btn">M300</button>
         <button class="filter_btn">M350</button>
@@ -551,54 +688,157 @@
         <button class="filter_btn">M600</button>
         <button class="filter_btn">M1000</button>
       </div>
-
-      <div class="about_beton_block">
-        <div class="about_beton_block_title">
-          <h4>М100</h4>
-          <div class="know_more">
-            <p>Узнать больше</p>
-            <img src="./assets/icons/arrow-right.svg" alt="" />
-          </div>
-        </div>
-        <div class="about_beton_block_wrapper">
-          <div class="about_beton_block_item">
-            <h5>Состав 1 м3</h5>
-            <p>
-              Портландцемент используется для вяжущих свойств бетона М100, затем
-              в состав добавляются наполнители — в виде песка, щебня или
-              среднего размера гравия, в последнюю очередь вода — для создания
-              нужной консистенции. Выбор составляющих отличается в зависимости
-              от конкретно поставленных задач.
-            </p>
-
-            <div class="beton_desc">
-              <div class="beton_desc_list">
-                <p>Основные составляющие:</p>
-                <ul>
-                  <li>Цемент М400 — 184 кг;</li>
-                  <li>Песок — 846 кг;</li>
-                  <li>Щебень — 1288 кг;</li>
-                  <li>Вода — 170-180л;</li>
-                  <li>Добавки — опционально.</li>
-                </ul>
-              </div>
-              <img src="./assets/images/breton-img-group.png" alt="" />
+      <div class="about_beton_blocks_content">
+        <div class="about_beton_block active_filter_btn" id="beton1">
+          <div class="about_beton_block_title">
+            <h4>М100</h4>
+            <div class="know_more">
+              <p>Узнать больше</p>
+              <img src="./assets/icons/arrow-right.svg" alt="" />
             </div>
           </div>
-          <div class="about_beton_block_wrapper_line"></div>
-          <div class="about_beton_block_item">
-            <h5>Область применения</h5>
-            <p>
-              Бетон марки М100 В7.5 применяется для ремонтно-строительных работ
-              в тех случаях, когда не требуются высокие эксплуатационные
-              качества для конструкции. Из-за низкого показателя прочности эта
-              марка бетона относится к «тощему» типу раствора.
-            </p>
+          <div class="about_beton_block_wrapper">
+            <div class="about_beton_block_item">
+              <h5>Состав 1 м3</h5>
+              <p>
+                Портландцемент используется для вяжущих свойств бетона М100,
+                затем в состав добавляются наполнители — в виде песка, щебня или
+                среднего размера гравия, в последнюю очередь вода — для создания
+                нужной консистенции. Выбор составляющих отличается в зависимости
+                от конкретно поставленных задач.
+              </p>
 
-            <div class="beton_desc_gallery">
-              <img src="./assets/images/beton-1.png" alt="" />
-              <img src="./assets/images/beton-2.png" alt="" />
-              <img src="./assets/images/beton-3.png" alt="" />
+              <div class="beton_desc">
+                <div class="beton_desc_list">
+                  <p>Основные составляющие:</p>
+                  <ul>
+                    <li>Цемент М400 — 184 кг;</li>
+                    <li>Песок — 846 кг;</li>
+                    <li>Щебень — 1288 кг;</li>
+                    <li>Вода — 170-180л;</li>
+                    <li>Добавки — опционально.</li>
+                  </ul>
+                </div>
+                <img src="./assets/images/breton-img-group.png" alt="" />
+              </div>
+            </div>
+            <div class="about_beton_block_wrapper_line"></div>
+            <div class="about_beton_block_item">
+              <h5>Область применения</h5>
+              <p>
+                Бетон марки М100 В7.5 применяется для ремонтно-строительных
+                работ в тех случаях, когда не требуются высокие эксплуатационные
+                качества для конструкции. Из-за низкого показателя прочности эта
+                марка бетона относится к «тощему» типу раствора.
+              </p>
+
+              <div class="beton_desc_gallery">
+                <img src="./assets/images/beton-1.png" alt="" />
+                <img src="./assets/images/beton-2.png" alt="" />
+                <img src="./assets/images/beton-3.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about_beton_block" id="beton2">
+          <div class="about_beton_block_title">
+            <h4>М150</h4>
+            <div class="know_more">
+              <p>Узнать больше</p>
+              <img src="./assets/icons/arrow-right.svg" alt="" />
+            </div>
+          </div>
+          <div class="about_beton_block_wrapper">
+            <div class="about_beton_block_item">
+              <h5>Состав 1 м3</h5>
+              <p>
+                Для приготовления бетона М150 используют портландцемент М400 или
+                М500, песок, щебень (может быть гравийным и известковым) или
+                гравий, воду и пластификаторы. Присадки придают готовой бетонной
+                постройке повышенные показатели морозостойкости, устойчивости к
+                влаге и прочности.
+              </p>
+
+              <div class="beton_desc">
+                <div class="beton_desc_list">
+                  <p>Основные составляющие:</p>
+                  <ul>
+                    <li>Цемент М400 — 184 кг;</li>
+                    <li>Песок — 846 кг;</li>
+                    <li>Щебень — 1288 кг;</li>
+                    <li>Вода — 170-180л;</li>
+                    <li>Добавки — опционально.</li>
+                  </ul>
+                </div>
+                <img src="./assets/images/breton-img-group.png" alt="" />
+              </div>
+            </div>
+            <div class="about_beton_block_wrapper_line"></div>
+            <div class="about_beton_block_item">
+              <h5>Область применения</h5>
+              <p>
+                Бетон марки М100 В7.5 применяется для ремонтно-строительных
+                работ в тех случаях, когда не требуются высокие эксплуатационные
+                качества для конструкции. Из-за низкого показателя прочности эта
+                марка бетона относится к «тощему» типу раствора.
+              </p>
+
+              <div class="beton_desc_gallery">
+                <img src="./assets/images/beton-1.png" alt="" />
+                <img src="./assets/images/beton-2.png" alt="" />
+                <img src="./assets/images/beton-3.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about_beton_block" id="beton3">
+          <div class="about_beton_block_title">
+            <h4>М200</h4>
+            <div class="know_more">
+              <p>Узнать больше</p>
+              <img src="./assets/icons/arrow-right.svg" alt="" />
+            </div>
+          </div>
+          <div class="about_beton_block_wrapper">
+            <div class="about_beton_block_item">
+              <h5>Состав 1 м3</h5>
+              <p>
+                Чтобы изготовить бетон м200 необходимы цемент М400-М500, песок,
+                щебень (из известняка, гравия или гранита) и вода. Для
+                усовершенствования эксплуатационных характеристик бетона
+                применяют различные добавки: пластификаторы, стабилизаторы и
+                гидрофобизаторы.
+              </p>
+
+              <div class="beton_desc">
+                <div class="beton_desc_list">
+                  <p>Основные составляющие:</p>
+                  <ul>
+                    <li>Цемент М400 — 184 кг;</li>
+                    <li>Песок — 846 кг;</li>
+                    <li>Щебень — 1288 кг;</li>
+                    <li>Вода — 170-180л;</li>
+                    <li>Добавки — опционально.</li>
+                  </ul>
+                </div>
+                <img src="./assets/images/breton-img-group.png" alt="" />
+              </div>
+            </div>
+            <div class="about_beton_block_wrapper_line"></div>
+            <div class="about_beton_block_item">
+              <h5>Область применения</h5>
+              <p>
+                Бетон марки М100 В7.5 применяется для ремонтно-строительных
+                работ в тех случаях, когда не требуются высокие эксплуатационные
+                качества для конструкции. Из-за низкого показателя прочности эта
+                марка бетона относится к «тощему» типу раствора.
+              </p>
+
+              <div class="beton_desc_gallery">
+                <img src="./assets/images/beton-1.png" alt="" />
+                <img src="./assets/images/beton-2.png" alt="" />
+                <img src="./assets/images/beton-3.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -794,13 +1034,13 @@
               <h3>12 000 ₽</h3>
             </div>
             <div>
-                <p>Цена за час</p>
-                <h3>1 710 ₽</h3>
-              </div>
+              <p>Цена за час</p>
+              <h3>1 710 ₽</h3>
+            </div>
           </div>
           <button class="main_btn red_btn">Заказать</button>
         </div>
-        <img src="./assets/images/truck.png" alt="">
+        <img src="./assets/images/truck.png" alt="" />
         <div class="truck_block_right">
           <p>Размер площадки: <span>10х10 м</span></p>
           <p>Высота подачи: <span>46 м </span></p>
@@ -1102,27 +1342,22 @@
             el: ".docs_pag",
             clickable: true,
           },
-          //   breakpoints: {
-          //     350: {
-          //       slidesPerView: 1,
-          //     },
-          //     640: {
-          //       slidesPerView: 2,
-          //       spaceBetween: 20,
-          //     },
-          //     768: {
-          //       slidesPerView: 3,
-          //       spaceBetween: 30,
-          //     },
-          //     1024: {
-          //       slidesPerView: 3,
-          //       spaceBetween: 48,
-          //     },
-          //   },
+          breakpoints: {
+            350: {
+              slidesPerView: 1,
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1100: {
+              slidesPerView: 3,
+              spaceBetween: 48,
+            },
+          },
         });
       });
     </script>
-
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const swiper = new Swiper(".reates_car", {
@@ -1138,23 +1373,20 @@
             el: ".reates_pag",
             clickable: true,
           },
-          //   breakpoints: {
-          //     350: {
-          //       slidesPerView: 1,
-          //     },
-          //     640: {
-          //       slidesPerView: 2,
-          //       spaceBetween: 20,
-          //     },
-          //     768: {
-          //       slidesPerView: 3,
-          //       spaceBetween: 30,
-          //     },
-          //     1024: {
-          //       slidesPerView: 3,
-          //       spaceBetween: 48,
-          //     },
-          //   },
+          breakpoints: {
+            350: {
+              slidesPerView: 1,
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+
+            1100: {
+              slidesPerView: 3,
+              spaceBetween: 48,
+            },
+          },
         });
       });
     </script>
@@ -1174,23 +1406,24 @@
             el: ".photos_car_pag",
             clickable: true,
           },
-          //   breakpoints: {
-          //     350: {
-          //       slidesPerView: 1,
-          //     },
-          //     640: {
-          //       slidesPerView: 2,
-          //       spaceBetween: 20,
-          //     },
-          //     768: {
-          //       slidesPerView: 3,
-          //       spaceBetween: 30,
-          //     },
-          //     1024: {
-          //       slidesPerView: 3,
-          //       spaceBetween: 48,
-          //     },
-          //   },
+          breakpoints: {
+            350: {
+              slidesPerView: 1,
+            },
+            450: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+
+            1100: {
+              slidesPerView: 4,
+              spaceBetween: 48,
+            },
+          },
         });
       });
     </script>
@@ -1210,25 +1443,19 @@
             el: ".videos_car_pag",
             clickable: true,
           },
-          //   breakpoints: {
-          //     350: {
-          //       slidesPerView: 1,
-          //     },
-          //     640: {
-          //       slidesPerView: 2,
-          //       spaceBetween: 20,
-          //     },
-          //     768: {
-          //       slidesPerView: 3,
-          //       spaceBetween: 30,
-          //     },
-          //     1024: {
-          //       slidesPerView: 3,
-          //       spaceBetween: 48,
-          //     },
-          //   },
+          breakpoints: {
+            350: {
+              slidesPerView: 1,
+            },
+
+            768: {
+              slidesPerView: 2,
+            },
+          },
         });
       });
     </script>
+    <script src="./scripts/tabs.js"></script>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>

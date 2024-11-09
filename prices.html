@@ -54,10 +54,83 @@
             <div class="catalog_btn">
               <img src="./assets/icons/catallog-menu.svg" alt="" />
               <p>Каталог</p>
+              <div class="menu_drop_down menu_drop_down_main">
+                <div class="menu_drop_down_list">
+                  <div class="menu_drop_down_item">
+                    <img src="./assets/icons/beton.png" alt="" />
+                    <p>Бетон</p>
+                  </div>
+                  <div class="menu_drop_down_list_items">
+                    <a href="#"><p>Товарный бетон</p></a>
+                    <a href="#"><p>Гравийный бетон</p></a>
+                    <a href="#"><p>Гранитный бетон</p></a>
+                    <a href="#"><p>Тощий бетон </p></a>
+                    <a href="#"><p>Тяжелый бетон</p></a>
+                    <a href="#"><p>Керамзитобетон</p></a>
+                    <a href="#"><p>Мелкозернистый бетон</p></a>
+                    <a href="#"><p>Зимний бетон</p></a>
+                  </div>
+                </div>
+                <div class="menu_drop_down_list">
+                  <div class="menu_drop_down_item">
+                    <img src="./assets/icons/sement.png" alt="" />
+                    <p>Цементный раствор</p>
+                  </div>
+                  <div class="menu_drop_down_list_items pr0">
+                    <a href="#"><p>Пескобетон</p></a>
+                    <a href="#"><p>Цементно-известковый раствор</p></a>
+                  </div>
+                  <div class="menu_drop_down_item pt_32px">
+                    <img src="./assets/icons/sement.png" alt="" />
+                    <p>Цементные смеси</p>
+                  </div>
+                  <div class="menu_drop_down_list_items pr0">
+                    <a href="#"><p>Пескоцементная смесь</p></a>
+                    <a href="#"><p>Кладочная смесь</p></a>
+                  </div>
+                </div>
+                <div class="menu_drop_down_list">
+                  <div class="menu_drop_down_item">
+                    <img src="./assets/icons/ruds.png" alt="" />
+                    <p>Нерудные материалы</p>
+                  </div>
+                  <div class="menu_drop_down_list_items">
+                    <a href="#"><p>Песок</p></a>
+                    <a href="#"><p>Щебень</p></a>
+                    <a href="#"><p class="pl_16px">Гравиный щебень</p></a>
+                    <a href="#"><p class="pl_16px">Гранитный щебень</p></a>
+                  </div>
+                  <div class="menu_drop_down_item pt_32px">
+                    <img src="./assets/icons/materials.png" alt="" />
+                    <p>Строительные материалы</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="nav_menu_item">
               <p>Услуги</p>
               <img src="./assets/icons/arrow-down.svg" alt="" />
+
+              <div class="menu_drop_down menu_drop_down_sec">
+                <div class="menu_drop_down_list">
+                  <div class="menu_drop_down_item">
+                    <img src="./assets/icons/beton.png" alt="" />
+                    <p>Бетон</p>
+                  </div>
+                  <div class="menu_drop_down_item">
+                    <img src="./assets/icons/ruds.png" alt="" />
+                    <p>Щебень</p>
+                  </div>
+                  <div class="menu_drop_down_item">
+                    <img src="./assets/icons/sement.png" alt="" />
+                    <p>Строительный песок</p>
+                  </div>
+                  <div class="menu_drop_down_item">
+                    <img src="./assets/icons/materials.png" alt="" />
+                    <p>Стройматериалы</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <a href="#">
               <div class="nav_menu_item">
@@ -69,7 +142,7 @@
                 <p>Калькулятор</p>
               </div></a
             >
-            <a href="#">
+            <a href="./prices.html">
               <div class="nav_menu_item">
                 <p>Прайс</p>
               </div></a
@@ -77,6 +150,27 @@
             <div class="nav_menu_item">
               <p>Компания</p>
               <img src="./assets/icons/arrow-down.svg" alt="" />
+
+              <div class="menu_drop_down menu_drop_down_sec">
+                <div class="menu_drop_down_list">
+                  <div class="menu_drop_down_item">
+                    <img src="./assets/icons/beton.png" alt="" />
+                    <p>Бетон</p>
+                  </div>
+                  <div class="menu_drop_down_item">
+                    <img src="./assets/icons/ruds.png" alt="" />
+                    <p>Щебень</p>
+                  </div>
+                  <div class="menu_drop_down_item">
+                    <img src="./assets/icons/sement.png" alt="" />
+                    <p>Строительный песок</p>
+                  </div>
+                  <div class="menu_drop_down_item">
+                    <img src="./assets/icons/materials.png" alt="" />
+                    <p>Стройматериалы</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <a href="#">
               <div class="nav_menu_item">
@@ -88,22 +182,63 @@
             <input type="text" placeholder="Поиск" />
             <img src="./assets/icons/search.svg" alt="" />
           </div>
+          <div class="catalog_btn mob_menu_btn" onclick="togglerMenu()">
+            <img src="./assets/icons/catallog-menu.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="mob_menu_wrapper">
+        <div class="mob_menu_exit">
+          <img onclick="togglerMenu()" src="./assets/icons/exit.svg" alt="" />
+        </div>
+        <div class="mob_menu_list nav_menu">
+          <a href="#">
+            <div class="nav_menu_item">
+              <p>Услуги</p>
+            </div></a
+          >
+          <a href="#">
+            <div class="nav_menu_item">
+              <p>Доставка</p>
+            </div></a
+          >
+          <a href="#">
+            <div class="nav_menu_item">
+              <p>Калькулятор</p>
+            </div></a
+          >
+          <a href="./prices.html">
+            <div class="nav_menu_item">
+              <p>Прайс</p>
+            </div></a
+          >
+          <a href="./prices.html">
+            <div class="nav_menu_item">
+              <p>Компания</p>
+            </div></a
+          >
+          <a href="#">
+            <div class="nav_menu_item">
+              <p>Контакты</p>
+            </div></a
+          >
         </div>
       </div>
     </nav>
-
-    <div class="dscdsc" style="    background: rgb(247, 247, 248);">
-    <div class="pages_navigation container">
-      <a href="./index.html" class="main_page_link">
-        <img src="./assets/icons/home.svg" alt="" />
-      </a>
-      <img
-        class="pages_navigation_arr"
-        src="./assets/icons/arrow-right.svg"
-        alt=""
-      />
-      <p>Цены</p>
-    </div></div>
+    <div class="dscdsc" style="background: rgb(247, 247, 248)">
+      <div class="pages_navigation container">
+        <a href="./index.html" class="main_page_link">
+          <img src="./assets/icons/home.svg" alt="" />
+        </a>
+        <img
+          class="pages_navigation_arr"
+          src="./assets/icons/arrow-right.svg"
+          alt=""
+        />
+        <p>Цены</p>
+      </div>
+    </div>
 
     <div class="prices_block_wrapper">
       <div class="prices_block container">
@@ -732,25 +867,23 @@
             el: ".docs_pag",
             clickable: true,
           },
-          //   breakpoints: {
-          //     350: {
-          //       slidesPerView: 1,
-          //     },
-          //     640: {
-          //       slidesPerView: 2,
-          //       spaceBetween: 20,
-          //     },
-          //     768: {
-          //       slidesPerView: 3,
-          //       spaceBetween: 30,
-          //     },
-          //     1024: {
-          //       slidesPerView: 3,
-          //       spaceBetween: 48,
-          //     },
-          //   },
+          breakpoints: {
+            350: {
+              slidesPerView: 1,
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1100: {
+              slidesPerView: 3,
+              spaceBetween: 48,
+            },
+          },
         });
       });
     </script>
+    <script src="./scripts/tabs.js"></script>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>

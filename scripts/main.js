@@ -22,8 +22,11 @@ document.querySelectorAll(".nav_menu_item").forEach((item) => {
   });
 });
 
-
-
+function togglerMenu() {
+  document
+    .querySelector(".mob_menu_wrapper")
+    .classList.toggle("visible_mob_menu_wrapper");
+}
 
 document.querySelectorAll(".faq_item").forEach((item) => {
   item.addEventListener("click", () => {
@@ -36,4 +39,3 @@ document.querySelectorAll(".faq_item").forEach((item) => {
     });
   });
 });
-

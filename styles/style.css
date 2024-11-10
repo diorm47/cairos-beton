@@ -1831,6 +1831,13 @@ footer {
   transform: translateX(0);
 }
 
+.truck_block {
+  display: none;
+}
+.truck_blocks_wrapper .active_filter_btn {
+  display: flex;
+}
+
 @media only screen and (max-width: 1400px) {
   .container {
     padding-left: 10px;

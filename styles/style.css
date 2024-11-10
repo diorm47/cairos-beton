@@ -566,12 +566,63 @@ textarea {
   padding: 48px;
   background: rgb(255, 255, 255);
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   gap: 56px;
 }
 .calculator_left {
   width: 70%;
+}
+.calc_actions .result_btn {
+  width: auto !important;
+  padding: 0 24px;
+}
+
+.res_title h2 {
+  /* Headline Desktop/H2 */
+  color: rgb(27, 27, 30);
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -2.5%;
+  text-align: left;
+  margin-bottom: 32px;
+}
+.res_title p {
+  /* Headline Desktop/H4 */
+  color: rgba(27, 27, 30, 0.7);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: -1.5%;
+  text-align: left;
+  margin-bottom: 80px;
+}
+.calc_result_form input {
+  width: 100%;
+  height: 56px;
+  text-indent: 24px;
+  border-radius: 4px;
+
+  background: rgba(27, 27, 30, 0.05);
+
+  /* Body/Default */
+  color: rgba(27, 27, 30, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.calc_result_inps {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 80px;
+}
+.calc_result_inps input {
+  width: 50%;
 }
 .calculator_title {
   display: flex;
@@ -1837,6 +1888,19 @@ footer {
 .truck_blocks_wrapper .active_filter_btn {
   display: flex;
 }
+.calc_btns {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.back_btn {
+  background: transparent;
+  border: 1px solid rgba(27, 27, 30, 0.15);
+}
+
+.calculator {
+  display: none; /* По умолчанию скрыты все шаги */
+}
 
 @media only screen and (max-width: 1400px) {
   .container {
@@ -2190,5 +2254,28 @@ footer {
   }
   .header_bg_block .dlbp_title h3 {
     text-align: left;
+  }
+  .calc_actions .result_btn {
+    width: 100% !important;
+  }
+  .calc_result_inps {
+    flex-direction: column;
+    margin-bottom: 0px;
+    gap: 0;
+  }
+  .calc_result_inps input {
+    width: 100%;
+  }
+  .res_title p {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+  .res_title h2 {
+    font-size: 25px;
+    line-height: 130%;
+  }
+  .calc_btns {
+    flex-direction: column;
+    width: 100%;
   }
 }

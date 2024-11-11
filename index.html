@@ -878,108 +878,184 @@
         <div class="block_title">
           <h3>Стоимость продукции и услуг</h3>
         </div>
-        <div class="filter_btns filter_btns_sec">
-          <button class="filter_btn active_filter_btn">Бетон</button>
-          <button class="filter_btn">Щебень</button>
-          <button class="filter_btn">Строительный песок</button>
-          <button class="filter_btn">Стройматериалы</button>
-          <button class="filter_btn">Аренда автобетононасоса</button>
-          <button class="filter_btn">Строительная техника</button>
-          <button class="filter_btn">Стационарный бетононасос</button>
-          <button class="filter_btn">Прогрев бетона</button>
+        <div class="filter_btns filter_btns_sec prices_btns">
+          <button class="filter_btn active_filter_btn" data-id="price1">
+            Бетон
+          </button>
+          <button class="filter_btn" data-id="price2">Щебень</button>
+          <button class="filter_btn" data-id="price1">
+            Строительный песок
+          </button>
+          <button class="filter_btn" data-id="price2">Стройматериалы</button>
+          <button class="filter_btn" data-id="price1">
+            Аренда автобетононасоса
+          </button>
+          <button class="filter_btn" data-id="price2">
+            Строительная техника
+          </button>
+          <button class="filter_btn" data-id="price1">
+            Стационарный бетононасос
+          </button>
+          <button class="filter_btn" data-id="price2">Прогрев бетона</button>
         </div>
 
-        <div class="prices_table">
-          <table>
-            <thead>
-              <tr>
-                <td>Тип</td>
-                <td>Обозначение ГОСТ</td>
-                <td>Наполнитель</td>
-                <td class="tac">Цена</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>М100</td>
-                <td>?</td>
-                <td>?</td>
-                <td>
-                  <div class="table_buy">
-                    ?
-                    <button class="main_btn red_btn">Купить</button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>М100</td>
-                <td>?</td>
-                <td>?</td>
-                <td>
-                  <div class="table_buy">
-                    ?
-                    <button class="main_btn red_btn">Купить</button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>М100</td>
-                <td>?</td>
-                <td>?</td>
-                <td>
-                  <div class="table_buy">
-                    ?
-                    <button class="main_btn red_btn">Купить</button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>М100</td>
-                <td>?</td>
-                <td>?</td>
-                <td>
-                  <div class="table_buy">
-                    ?
-                    <button class="main_btn red_btn">Купить</button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>М100</td>
-                <td>?</td>
-                <td>?</td>
-                <td>
-                  <div class="table_buy">
-                    ?
-                    <button class="main_btn red_btn">Купить</button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>М100</td>
-                <td>?</td>
-                <td>?</td>
-                <td>
-                  <div class="table_buy">
-                    ?
-                    <button class="main_btn red_btn">Купить</button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>М100</td>
-                <td>?</td>
-                <td>?</td>
-                <td>
-                  <div class="table_buy">
-                    ?
-                    <button class="main_btn red_btn">Купить</button>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="prices_tables">
+          <div class="prices_table active_filter_btn" id="price1">
+            <table>
+              <thead>
+                <tr>
+                  <td>Тип</td>
+                  <td>Обозначение ГОСТ</td>
+                  <td>Наполнитель</td>
+                  <td>Цена</td>
+                  <td></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>М100</td>
+                  <td>?</td>
+                  <td>?</td>
+                  <td>?</td>
+                  <td>
+                    <div class="table_buy">
+                      <button class="main_btn red_btn">Купить</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>М100</td>
+                  <td>?</td>
+                  <td>?</td>
+                  <td>?</td>
+                  <td>
+                    <div class="table_buy">
+                      <button class="main_btn red_btn">Купить</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>М100</td>
+                  <td>?</td>
+                  <td>?</td>
+                  <td>?</td>
+                  <td>
+                    <div class="table_buy">
+                      <button class="main_btn red_btn">Купить</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>М100</td>
+                  <td>?</td>
+                  <td>?</td>
+                  <td>?</td>
+                  <td>
+                    <div class="table_buy">
+                      <button class="main_btn red_btn">Купить</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>М100</td>
+                  <td>?</td>
+                  <td>?</td>
+                  <td>?</td>
+                  <td>
+                    <div class="table_buy">
+                      <button class="main_btn red_btn">Купить</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>М100</td>
+                  <td>?</td>
+                  <td>?</td>
+                  <td>?</td>
+                  <td>
+                    <div class="table_buy">
+                      <button class="main_btn red_btn">Купить</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="prices_table" id="price2">
+            <table>
+              <thead>
+                <tr>
+                  <td>Тип</td>
+                  <td>Цена за м3</td>
+                  <td></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Щебень гранитный фр. 3/10</td>
+
+                  <td>?</td>
+                  <td>
+                    <div class="table_buy">
+                      <button class="main_btn red_btn">Купить</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Щебень гранитный фр. 3/10</td>
+
+                  <td>?</td>
+                  <td>
+                    <div class="table_buy">
+                      <button class="main_btn red_btn">Купить</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Щебень гранитный фр. 3/10</td>
+
+                  <td>?</td>
+                  <td>
+                    <div class="table_buy">
+                      <button class="main_btn red_btn">Купить</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Щебень гранитный фр. 3/10</td>
+
+                  <td>?</td>
+                  <td>
+                    <div class="table_buy">
+                      <button class="main_btn red_btn">Купить</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Щебень гранитный фр. 3/10</td>
+
+                  <td>?</td>
+                  <td>
+                    <div class="table_buy">
+                      <button class="main_btn red_btn">Купить</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Щебень гранитный фр. 3/10</td>
+
+                  <td>?</td>
+                  <td>
+                    <div class="table_buy">
+                      <button class="main_btn red_btn">Купить</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
+
         <div class="prices_table_desc">
           <p>
             Для точного расчета стоимости рекомендуем связаться с нашими

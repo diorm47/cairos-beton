@@ -21,6 +21,15 @@ document.querySelectorAll(".nav_menu_item").forEach((item) => {
     });
   });
 });
+window.addEventListener('scroll', () => {
+  const nav = document.querySelector('nav');
+  
+  if (window.scrollY > 100) {
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
+});
 
 function togglerMenu() {
   document
@@ -39,3 +48,33 @@ document.querySelectorAll(".faq_item").forEach((item) => {
     });
   });
 });
+
+
+
+const tabsPrices = document.querySelector(".prices_btns");
+const tabButtonPrices = document.querySelectorAll(".prices_btns .filter_btn");
+const contentsPrices = document.querySelectorAll(".prices_table");
+
+if (tabsPrices) {
+  tabsPrices.onclick = (e) => {
+    let target = e.target;
+    while (target && !target.classList.contains("filter_btn")) {
+      target = target.parentNode;
+    }
+    if (target && target.dataset.id) {
+      const id = target.dataset.id;
+      tabButtonPrices.forEach((btn) => {
+        btn.classList.remove("active_filter_btn");
+      });
+      target.classList.add("active_filter_btn");
+
+      contentsPrices.forEach((content) => {
+        content.classList.remove("active_filter_btn");
+      });
+      const element = document.getElementById(id);
+      element.classList.add("active_filter_btn");
+    }
+  };
+}
+
+

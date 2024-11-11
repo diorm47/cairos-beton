@@ -29,6 +29,20 @@ textarea {
   margin: 0 auto;
 }
 
+nav {
+  position: relative;
+}
+.scrolled {
+  padding-top: 100px;
+}
+.scrolled
+.main_nav_container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+ transition: all 0.4s ease;
+ z-index: 2;
+}
 .top_nav {
   padding: 22px 0;
   display: flex;
@@ -529,8 +543,8 @@ textarea {
 .table_buy {
   display: flex;
   align-items: center;
-  gap: 48px;
-  justify-content: flex-end;
+ 
+  justify-content: center;
 }
 .table_buy .red_btn {
   width: 181px;
@@ -1902,6 +1916,12 @@ footer {
   display: none; /* По умолчанию скрыты все шаги */
 }
 
+.prices_table {
+  display: none;
+}
+.prices_tables .active_filter_btn{
+  display: block;
+}
 @media only screen and (max-width: 1400px) {
   .container {
     padding-left: 10px;
